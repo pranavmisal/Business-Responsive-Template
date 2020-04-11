@@ -667,6 +667,14 @@ body{
 	z-index: -1;
 }
 
+#exampleModalLongTitle{
+	color: #06184B;
+}
+
+#pills-tabContent h2{
+	color: #06184B;
+}
+
 @keyframes drop{
 	0% {
 		opacity: 0;
