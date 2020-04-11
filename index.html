@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script type="text/javascript" src="assets/js/JavaScript.js"></script>
+	<title>Template</title>
+</head>
+<body>
+	<!-- navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light" id="scroll-spy">
+		<a class="navbar-brand" href="#">
+			<img src="assets/images/logo.svg" alt=""> LOGO
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#project">Project</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#solution">Solution</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#services">Services</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+						About
+					</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#testmonials">Testmonials</a>
+						<a class="dropdown-item" href="#contact">Contact Us</a>
+						<a class="dropdown-item" href="#">FAQ's</a>
+					</div>
+				</li>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#loginModal">LogIn</button>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<button type="button" class="btn btn-primary btn-sm" href="#pills-profile" data-toggle="modal" data-target="#loginModal">SignUp</button>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Modal -->
+	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Login/Registartion</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Login</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">SignUp</a>
+						</li>
+					</ul>
+					<div class="tab-content" id="pills-tabContent">
+						<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+							<div class="container">
+								<h2>Login</h2>
+								<form action="/action_page.php">
+									<div class="form-group">
+										<label for="email">Email:</label>
+										<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+									</div>
+									<div class="form-group">
+										<label for="pwd">Password:</label>
+										<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" name="remember"> Remember me</label>
+									</div>
+									<button type="submit" class="btn btn-default">Submit</button>
+								</form>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+							<div class="container">
+								<h2>Sign Up</h2>
+								<form action="/action_page.php">
+									<div class="form-group">
+										<label for="email">Email:</label>
+										<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+									</div>
+									<div class="form-group">
+										<label for="pwd">Password:</label>
+										<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" name="remember"> Remember me</label>
+									</div>
+									<button type="submit" class="btn btn-default">Submit</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- main -->
+	<div data-spy="scroll" data-target="#scroll-spy" data-offset="0">
+		<div class="container-fluid section1">
+			<div class="container">
+				<div class="row">
+					<div class="col-md main1">
+						<h1>Risk Smart, Risk Start</h1>
+						<p>Making smart risk, decision is freaking hard</p>
+						<button class="btn btn-primary">
+							Start with your risk adviser
+						</button>
+					</div>
+					<div class="col-md main-img">
+						<img class="img-fluid" src="assets/images/matebook.png" alt="">
+					</div>
+				</div>
+			</div>
+			<img class="big-circle" src="assets/images/big-eclipse.svg" alt="">
+			<img class="medium-circle" src="assets/images/mid-eclipse.svg" alt="">
+			<img class="small-circle" src="assets/images/small-eclipse.svg" alt="">
+		</div>
+
+		<div class="container-fluid section2">
+			<div class="row">
+				<div class="col-md-6 sec2left">
+					<h1>LOVE OUR WORKS</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum culpa fugiat tempore odio officia accusantium iste dicta iure, laborum voluptates neque aut saepe non commodi cumque nostrum repellat libero eum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, omnis eligendi. Unde iure, numquam dolorum fugit, inventore aliquam! Ea cupiditate delectus saepe debitis eum exercitationem quas consectetur corrupti fugit repellat.</p>
+				</div>
+				<div class="col-md-6 sec2right">
+					<h3>PIXEL PERFECT TEMPLATES</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aspernatur distinctio harum dolores, fugiat, dolore excepturi ratione debitis vero nisi. Accusantium autem, debitis quae numquam commodi tempore ex nam, hic.</p>
+					<a href="#">learn more <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="container-fluid section3" id="project">
+			<div class="container">
+				<h1>OUR PROJECTS</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam tenetur facilis incidunt obcaecati, dolore iste in natus iusto, repellendus voluptate, placeat minus accusamus pariatur dolorum optio consequatur sit quaerat. Quas.</p>
+			</div>
+			<div class="container box-wrap2">
+				<div class="card1">
+					<div class="content1">
+						<h1>project name</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eos temporibus illum enim distinctio</p>
+						<a href="#">read more</a>
+					</div>
+				</div>
+				<div class="card1">
+					<div class="content1">
+						<h1>project name</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eos temporibus illum enim distinctio</p>
+						<a href="#">read more</a>
+					</div>
+				</div>
+				<div class="card1">
+					<div class="content1">
+						<h1>project name</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eos temporibus illum enim distinctio</p>
+						<a href="#">read more</a>
+					</div>
+				</div>
+				<div class="card1">
+					<div class="content1">
+						<h1>project name</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eos temporibus illum enim distinctio</p>
+						<a href="#">read more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid section4" id="solution">
+			<div class="container solution-con">
+				<h1 id="sol-head">solution</h1>
+				<div class="row">
+					<div class="col-md-4 solution-block">
+						<img src="assets/images/sol3.png" alt="">
+						<h3>Analyze</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur repellendus hic, sed repudiandae autem laudantium est exercitationem quos odit</p>
+						<a href="#">learn more <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+						</a>
+					</div>
+					<div class="col-md-4 solution-block">
+						<img src="assets/images/sol1.png" alt="">
+						<h3>Dedicated</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur repellendus hic, sed repudiandae autem laudantium est exercitationem quos odit</p>
+						<a href="#">learn more <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+						</a>
+					</div>
+					<div class="col-md-4 solution-block">
+						<img src="assets/images/sol2.png" alt="">
+						<h3>Platform</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur repellendus hic, sed repudiandae autem laudantium est exercitationem quos odit</p>
+						<a href="#">learn more <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid" id="testmonials">
+			<div id="section-team" class="section-padding">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="section-heading" style="visibility: visible;">
+								<h1>TESTIMONIALS</h1>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="team-img pull-right">
+												<img class="img-fluid" src="https://dummyimage.com/600x400/faf2fa/000105" alt="">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="team-info">
+												<h3>Jane Doe</h3>
+												<h6>Marketing Expert</h6>
+												<div class="team-div"></div>
+												<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sunt nihil delectus doloribus rem quos distinctio, eveniet quam laborum quod. Voluptatem hic odio animi vel, ducimus, similique maiores odit reprehenderit."</p>
+												<ul class="list-inline">
+													<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+													<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+													<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+													<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="team-img pull-right">
+												<img class="img-fluid" src="https://dummyimage.com/600x400/faf2fa/000105" alt="">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="team-info">
+												<h3>Mark</h3>
+												<h6>Marketing Expert</h6>
+												<div class="team-div"></div>
+												<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sunt nihil delectus doloribus rem quos distinctio, eveniet quam laborum quod. Voluptatem hic odio animi vel, ducimus, similique maiores odit reprehenderit."</p>
+												<ul class="list-inline">
+													<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+													<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+													<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+													<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="team-img pull-right">
+												<img class="img-fluid" src="https://dummyimage.com/600x400/faf2fa000105" alt="">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="team-info">
+												<h3>Marry</h3>
+												<h6>Marketing Expert</h6>
+												<div class="team-div"></div>
+												<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sunt nihil delectus doloribus rem quos distinctio, eveniet quam laborum quod. Voluptatem hic odio animi vel, ducimus, similique maiores odit reprehenderit."</p>
+												<ul class="list-inline">
+													<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+													<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+													<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+													<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid section5" id="services">
+			<div class="container">
+				<h1>SERVICES</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia maxime itaque soluta, omnis provident commodi enim assumenda ab nesciunt alias voluptatum ea magnam dolores architecto culpa sint aut necessitatibus perferendis.</p>
+			</div>
+			<div class="container box-wrap3">
+				<div class="card2">
+					<div class="content2">
+						<img src="assets/images/ser5.png" alt="">
+						<h2>bootstrap 4</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio illo est sunt tempore doloribus molestiae vitae, quas et, vero esse blanditiis magni odit voluptatum, voluptatibus provident nobis excepturi sint debitis.
+						</p>
+					</div>
+				</div>
+				<div class="card2">
+					<div class="content2">
+						<img src="assets/images/ser6.png" alt="">
+						<h2>html/css</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio illo est sunt tempore doloribus molestiae vitae, quas et, vero esse blanditiis magni odit voluptatum, voluptatibus provident nobis excepturi sint debitis.
+						</p>
+					</div>
+				</div>
+				<div class="card2">
+					<div class="content2">
+						<img src="assets/images/ser3.png" alt="">
+						<h2>web development</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio illo est sunt tempore doloribus molestiae vitae, quas et, vero esse blanditiis magni odit voluptatum, voluptatibus provident nobis excepturi sint debitis.
+						</p>
+					</div>
+				</div>
+				<div class="card2">
+					<div class="content2">
+						<img src="assets/images/ser4.png" alt="">
+						<h2>web template</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio illo est sunt tempore doloribus molestiae vitae, quas et, vero esse blanditiis magni odit voluptatum, voluptatibus provident nobis excepturi sint debitis.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid section7">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h1>get your free protection today score today</h1>
+						<a href="#" class="btn btn-primary adviser">Start with your risk adviser</a>
+					</div>
+					<div class="col-md-6">
+						<img class="img-fluid" src="assets/images/risk-advisor.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid section6" id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h1>contact us</h1>
+						<p id="sec6P">Voluptatibus commodi quo doloremque ducimus unde magni perspiciatis dolorem amet exercitationem, deserunt placeat nostrum beatae, nulla et libero quae soluta inventore itaque.</p>
+						<form method="post" data-form-title="CONTACT US">
+							<input type="hidden" data-form-email="true">
+							<div class="form-group">
+								<input type="text" class="form-control" name="name" required="" placeholder="Name*" data-form-field="Name">
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" name="email" required="" placeholder="Email*" data-form-field="Email">
+							</div>
+							<div class="form-group">
+								<input type="tel" class="form-control" name="phone" placeholder="Phone" data-form-field="Phone">
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" name="message" placeholder="Message" rows="7" data-form-field="Message"></textarea>
+							</div>
+							<div>
+								<button type="submit" class="btn btn-lg btn-primary">CONTACT US</button>
+							</div>
+						</form>
+					</div>
+					<div class="col-md-6 con-img">
+						<img class="img-fluid" src="https://dummyimage.com/600x800/857e85/000105" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div class="container-fluid footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<a class="navbar-brand" href="#">
+							<img class="img-fluid" src="assets/images/logo.svg" alt="">
+						</a>
+						<h4>about us</h4>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere eaque sit numquam et, quas debitis exercitationem laudantium.
+						</p>
+					</div>
+					<div class="col-md-4 foot-links">
+						<div class="col-md-3">
+							<h4>links</h4>
+							<ul class="list-group">
+								<li>
+									<a href="#">home</a>
+								</li>
+								<li>
+									<a href="#">contact</a>
+								</li>
+								<li>
+									<a href="#">Testimonial</a>
+								</li>
+								<li>
+									<a href="#">projects</a>
+								</li>
+								<li>
+									<a href="#">services</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<h4>subscribe</h4>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum distinctio reprehenderit magnam vel consectetur ut unde amet pariatur dicta, assumenda.
+						</p>
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="Subscribe" aria-label="Recipient's username" aria-describedby="basic-addon2">
+							<div class="input-group-append">
+								<button class="btn btn-primary foo-sub" type="button">Button</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container copyright">
+				<p>copyright &copy; 2020 all right reserved</p>
+			</div>
+		</div>
+		<!-- Footer -->
+	</div>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">
+		<i class="fa fa-angle-double-up fa-3x" aria-hidden="true"></i>
+	</button>
+	<!-- Optional JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		//Get the button:
+		mybutton = document.getElementById("myBtn");
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+	</script>
+</body>
+</html>
+
+
